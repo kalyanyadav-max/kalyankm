@@ -7,9 +7,6 @@
 
     <title>Kalyan Yadav K M | Portfolio</title>
 
-    <h2 style="color:#38bdf8; margin-top:10px;">
-        UI/UX Designer | Data Analyst
-    </h2>
     <style>
         * {
             margin: 0;
@@ -45,9 +42,9 @@
             list-style: none;
         }
 
-        nav ul li a:hover {
-            color: #38bdf8;
-            transition: 0.3s;
+        nav ul li a {
+            text-decoration: none;
+            color: white;
         }
 
         /* Resume Button */
@@ -63,28 +60,36 @@
         }
 
         /* Hero */
-        @media(max-width:768px) {
 
-            nav {
-                padding: 20px;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-
-            .hero {
-                flex-direction: column;
-                text-align: center;
-                padding: 20px;
-            }
-
-            .hero img {
-                width: 200px;
-                height: 200px;
-            }
-
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding: 0 120px;
         }
 
+        .hero img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #38bdf8;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero-text p {
+            max-width: 500px;
+            margin-top: 10px;
+        }
 
         /* Sections */
 
@@ -108,12 +113,10 @@
             flex-wrap: wrap;
         }
 
-        .skill:hover {
-            background: #38bdf8;
-            color: black;
-            transform: scale(1.05);
-            transition: 0.3s;
-            cursor: pointer;
+        .skill {
+            background: #1e293b;
+            padding: 15px 25px;
+            border-radius: 8px;
         }
 
         /* Education */
@@ -158,7 +161,6 @@
             text-align: center;
             padding: 20px;
             background: #020617;
-            color: #94a3b8;
         }
     </style>
 </head>
@@ -178,7 +180,6 @@
             <li><a href="#certificates">Certificates</a></li>
             <li><a href="#internship">Internship</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
         </ul>
 
     </nav>
@@ -289,9 +290,10 @@
         <h2>Contact</h2>
 
         <div class="contact">
-            <p><b>Email:</b> <a href="mailto:kalionyadav@gmail.com">kalionyadav@gmail.com</a></p>
 
-            <p><b>Phone:</b> <a href="tel:+917892788032">+91 7892788032</a></p>
+            <p>Email: <a href="mailto:kalionyadav@gmail.com">kalionyadav@gmail.com</a></p>
+
+            <p>Phone: <a href="tel:+917892788032">+91 7892788032</a></p>
 
             <p>
                 LinkedIn:
@@ -309,38 +311,6 @@
 
         </div>
 
-    </section>
-
-    <!--Projects-->
-
-    <section id="Projects">
-
-        <h2>Projects</h2>
-
-        <div class="Projects">
-
-            @media(max-width:768px){
-
-            nav{
-            padding:20px;
-            flex-direction:column;
-            align-items:center;
-            gap:10px;
-            }
-
-            .hero{
-            flex-direction:column;
-            text-align:center;
-            padding:20px;
-            }
-
-            .hero img{
-            width:200px;
-            height:200px;
-            }
-
-            }
-        </div>
     </section>
 
     <footer>
